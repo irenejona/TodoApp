@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicesTools", "ServicesTo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRCient", "SignalRCient\SignalRCient.csproj", "{8991918A-4B5A-428D-9637-959E5DCA6015}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodosTests", "TodosTests\TodosTests.csproj", "{5CCE8CB5-3EE5-4A37-B195-6876ACE540A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,17 @@ Global
 		{8991918A-4B5A-428D-9637-959E5DCA6015}.Release|x64.Build.0 = Release|Any CPU
 		{8991918A-4B5A-428D-9637-959E5DCA6015}.Release|x86.ActiveCfg = Release|Any CPU
 		{8991918A-4B5A-428D-9637-959E5DCA6015}.Release|x86.Build.0 = Release|Any CPU
+		{5CCE8CB5-3EE5-4A37-B195-6876ACE540A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CCE8CB5-3EE5-4A37-B195-6876ACE540A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CCE8CB5-3EE5-4A37-B195-6876ACE540A8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5CCE8CB5-3EE5-4A37-B195-6876ACE540A8}.Debug|x64.Build.0 = Debug|Any CPU
+		{5CCE8CB5-3EE5-4A37-B195-6876ACE540A8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5CCE8CB5-3EE5-4A37-B195-6876ACE540A8}.Debug|x86.Build.0 = Debug|Any CPU
+		{5CCE8CB5-3EE5-4A37-B195-6876ACE540A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CCE8CB5-3EE5-4A37-B195-6876ACE540A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CCE8CB5-3EE5-4A37-B195-6876ACE540A8}.Release|x64.ActiveCfg = Release|Any CPU
+		{5CCE8CB5-3EE5-4A37-B195-6876ACE540A8}.Release|x64.Build.0 = Release|Any CPU
+		{5CCE8CB5-3EE5-4A37-B195-6876ACE540A8}.Release|x86.ActiveCfg = Release|Any CPU
+		{5CCE8CB5-3EE5-4A37-B195-6876ACE540A8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

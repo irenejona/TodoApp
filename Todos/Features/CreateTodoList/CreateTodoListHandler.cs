@@ -14,12 +14,12 @@ namespace Todos.Features.CreateTodoList
         private readonly ILogger<CreateTodoListHandler> _logger;
         private readonly TodosDbContext _todosDbContext;
         private readonly IMapper _mapper;
-        private readonly RabbitMqClient _rabbitMqClient;
+        private readonly IRabbitMqClient _rabbitMqClient;
 
         public CreateTodoListHandler(ILogger<CreateTodoListHandler> logger,
             TodosDbContext todosDbContext,
             IMapper mapper,
-            RabbitMqClient rabbitMqClient)
+            IRabbitMqClient rabbitMqClient)
         {
             _logger = logger;
             _todosDbContext = todosDbContext;

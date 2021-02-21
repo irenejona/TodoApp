@@ -29,7 +29,8 @@ namespace Todos
                 .CreateDefaultBuilder(args)
                 .UseSerilog((_, _, cfg) => cfg
                     .Enrich.FromLogContext()
-                    .WriteTo.Console())
+                    .WriteTo.Console(LogEventLevel.Information,
+                        "[{Timestamp:HH:mm:ss.fff} {Level}] {Message:lj} {NewLine} {Exception}"))
                 .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); });
     }
 }

@@ -4,10 +4,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Microsoft.OpenApi.Models;
 using Notifications.Features;
 using Notifications.Infrastructure;
 using Serilog;
@@ -31,11 +29,6 @@ namespace Notifications
                 opt.Filters.Add<HttpExceptionFilter>();
             });
             
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo {Title = "Notifications", Version = "v1"});
-            });
-            
             services
                 .AddMediatR(typeof(Startup))
                 .AddMediatrBehaviours()
@@ -52,8 +45,6 @@ namespace Notifications
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Notifications v1"));
             }
             
             app

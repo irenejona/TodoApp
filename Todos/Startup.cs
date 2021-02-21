@@ -42,7 +42,7 @@ namespace Todos
                 .AddMediatrBehaviours()
                 .AddValidatorsFromAssembly(typeof(Startup).Assembly)
                 .AddAutoMapper(typeof(Startup))
-                .AddSingleton<RabbitMqClient>();
+                .AddSingleton<IRabbitMqClient, RabbitMqClient>();
 
             services.AddDbContext<TodosDbContext>(opt =>
                 opt
