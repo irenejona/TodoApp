@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notifications", "Notificati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicesTools", "ServicesTools\ServicesTools.csproj", "{054C3C4F-01FD-449E-9DA1-E021D0CCCE42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRCient", "SignalRCient\SignalRCient.csproj", "{8991918A-4B5A-428D-9637-959E5DCA6015}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRClient", "SignalRClient\SignalRClient.csproj", "{8991918A-4B5A-428D-9637-959E5DCA6015}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodosTests", "TodosTests\TodosTests.csproj", "{5CCE8CB5-3EE5-4A37-B195-6876ACE540A8}"
 EndProject
