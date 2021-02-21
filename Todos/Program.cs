@@ -28,6 +28,7 @@ namespace Todos
             Host
                 .CreateDefaultBuilder(args)
                 .UseSerilog((_, _, cfg) => cfg
+                    .MinimumLevel.Override("Microsoft.EntityFrameworkCore", Serilog.Events.LogEventLevel.Error)
                     .Enrich.FromLogContext()
                     .WriteTo.Console(LogEventLevel.Information,
                         "[{Timestamp:HH:mm:ss.fff} {Level}] {Message:lj} {NewLine} {Exception}"))

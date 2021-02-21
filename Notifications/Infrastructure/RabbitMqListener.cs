@@ -54,7 +54,7 @@ namespace Notifications.Infrastructure
             return Task.CompletedTask;
         }
 
-        public Task StopAsync(CancellationToken cancellationToken)
+        public override Task StopAsync(CancellationToken cancellationToken)
         {
             _connection.Close();
             

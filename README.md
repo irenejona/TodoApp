@@ -14,15 +14,12 @@ between the services using RabbitMQ following the eventual consistency
 approach of Event-Driven Architecture. SignalR is used for the push
 notifications and given its specific approach to websockets an additional
 console application is included to subscribe to the specified lists (and 
-therefore swagger has not be included in the notifications app, as it
-contains no HTTP endpoints).
+therefore swagger has not been included in the notifications app, as it
+contains no mappable HTTP endpoints).
 
 ## Infrastructure
-Included is a docker-compose file in the root directory which runs
-postgres and rabbitmq, needed for the application.
-
-The signalR client requires the `id` of a todoList to subscribe to
-as a runtime argument.
+Postgres and RabbitMQ are required for the application to run. These are included
+in the docker-compose file in the root directory.
 
 ## Running the application
 Postgres and RabbitMQ should be running before starting the application
