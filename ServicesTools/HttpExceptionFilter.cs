@@ -1,11 +1,11 @@
 using System.Linq;
+using Microsoft.AspNetCore.Mvc;
 using FluentValidation;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Hosting;
 
-namespace Todos.Infrastructure.CustomExceptions
+namespace ServicesTools
 {
     public class HttpExceptionFilter : IExceptionFilter
     {

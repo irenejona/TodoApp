@@ -1,6 +1,6 @@
 using System.Net;
 
-namespace Todos.Infrastructure.CustomExceptions
+namespace ServicesTools
 {
     public interface IHttpException
     {

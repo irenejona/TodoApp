@@ -14,19 +14,18 @@ using Serilog;
 using ServicesTools;
 using Todos.Database;
 using Todos.Infrastructure;
-using Todos.Infrastructure.CustomExceptions;
 
 namespace Todos
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; }
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
-
-        public IConfiguration Configuration { get; }
-
+        
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers(opt =>
@@ -67,9 +66,7 @@ namespace Todos
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Todos v1"));
             }
-
-            app.UseHttpsRedirection();
-
+            
             app
                 .UseSerilogRequestLogging()
                 .UseRouting();

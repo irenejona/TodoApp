@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notifications", "Notificati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicesTools", "ServicesTools\ServicesTools.csproj", "{054C3C4F-01FD-449E-9DA1-E021D0CCCE42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRCient", "SignalRCient\SignalRCient.csproj", "{8991918A-4B5A-428D-9637-959E5DCA6015}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,17 @@ Global
 		{054C3C4F-01FD-449E-9DA1-E021D0CCCE42}.Release|x64.Build.0 = Release|Any CPU
 		{054C3C4F-01FD-449E-9DA1-E021D0CCCE42}.Release|x86.ActiveCfg = Release|Any CPU
 		{054C3C4F-01FD-449E-9DA1-E021D0CCCE42}.Release|x86.Build.0 = Release|Any CPU
+		{8991918A-4B5A-428D-9637-959E5DCA6015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8991918A-4B5A-428D-9637-959E5DCA6015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8991918A-4B5A-428D-9637-959E5DCA6015}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8991918A-4B5A-428D-9637-959E5DCA6015}.Debug|x64.Build.0 = Debug|Any CPU
+		{8991918A-4B5A-428D-9637-959E5DCA6015}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8991918A-4B5A-428D-9637-959E5DCA6015}.Debug|x86.Build.0 = Debug|Any CPU
+		{8991918A-4B5A-428D-9637-959E5DCA6015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8991918A-4B5A-428D-9637-959E5DCA6015}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8991918A-4B5A-428D-9637-959E5DCA6015}.Release|x64.ActiveCfg = Release|Any CPU
+		{8991918A-4B5A-428D-9637-959E5DCA6015}.Release|x64.Build.0 = Release|Any CPU
+		{8991918A-4B5A-428D-9637-959E5DCA6015}.Release|x86.ActiveCfg = Release|Any CPU
+		{8991918A-4B5A-428D-9637-959E5DCA6015}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

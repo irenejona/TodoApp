@@ -28,8 +28,6 @@ namespace Todos
             Host
                 .CreateDefaultBuilder(args)
                 .UseSerilog((_, _, cfg) => cfg
-                    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
-                    .MinimumLevel.Override("System", LogEventLevel.Warning)
                     .Enrich.FromLogContext()
                     .WriteTo.Console())
                 .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); });
